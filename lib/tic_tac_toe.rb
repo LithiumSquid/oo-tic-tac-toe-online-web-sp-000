@@ -66,7 +66,7 @@ def turn
 end
 end
 
-def won?
+def self.won?
   WIN_COMBINATIONS.each do |combo|
     
     if @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X"
@@ -119,7 +119,7 @@ end
     turn
   end
 
-  if self.won?
+  if won?
     puts "Congratulations #{winner}!"
   else if draw? == true
     puts "Cat's Game!"
