@@ -119,7 +119,7 @@ end
     turn
   end
 
-  if won?
+  if self.won?
     puts "Congratulations #{winner}!"
   else if draw? == true
     puts "Cat's Game!"
